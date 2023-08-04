@@ -1,0 +1,326 @@
+/* Zomato.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  text-align: center;
+  margin: 10px;
+}
+
+.zomato-app {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  background-color: orange;
+  padding: 20px;
+  color:black;
+  position: relative;
+  overflow: hidden;
+}
+
+header img {
+ 
+  object-fit: cover;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header marquee img {
+  max-height: 500px;
+  margin-top: 50px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgoldenrodyellow;
+}
+
+.restaurant-list {
+  width: 30%;
+  background-color:plum;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.restaurant-list h2 {
+  margin: 0;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.restaurant-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.restaurant-list li {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+.restaurant-list li:hover {
+  background-color: bisque;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.restaurant-list img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.restaurant-list img:hover {
+  transform: scale(1.2);
+}
+
+.restaurant-details {
+  width: 35%;
+  background-color: lightgoldenrodyellow;
+}
+/* .restaurant-details :hover{
+ 
+  background-color: palevioletred;
+} */
+
+.restaurant-details h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.restaurant-details img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.restaurant-details h3 {
+  margin: 0;
+}
+
+.restaurant-details h3:first-child {
+  margin-top: 20px;
+}
+
+.restaurant-details ul {
+  list-style-type: none;
+  padding: 5;
+}
+
+.restaurant-details li {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.restaurant-details li:hover {
+  background-color: palevioletred;
+}
+
+
+.restaurant-details img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.cart-section {
+  position: relative;
+}
+
+.cart-button {
+  background-color: #f44336;
+  color: bisque;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-button img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.cart-button span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff9800;
+  color: blanchedalmond;
+  /* padding: 5px; */
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cart-button:hover {
+  background-color: yellowgreen;
+}
+
+.cart {
+  position: relative;
+  /* top: calc(100% + 10px); */
+  
+  
+  width: 300px;
+  background-color: peru;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.3s forwards;
+}
+
+.cart h2 {
+  margin: 0;
+  padding: 10px;
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.cart h4 {
+  margin: 0;
+}
+
+.cart p {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.cart button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/* .cart button:hover {
+  background-color: #e53935;
+} */
+
+.cart p:last-child {
+  margin-bottom: 0;
+}
+
+.purchase-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.purchase-button:hover {
+  background-color:yellowgreen;
+}
+
+.add-to-cart-msg {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background-color: blueviolet;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* @keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
+
+.cart.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.cart-item {
+  animation: slideInRight 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
